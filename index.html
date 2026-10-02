@@ -125,7 +125,20 @@ section {
   transform: scale(1.05);
   filter: brightness(1.1);
 }
+.galeria a {
+  position: relative;
+}
 
+.galeria a::after {
+  content: "🔍";
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(0,0,0,.65);
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 14px;
+}
 .cta {
   text-align: center;
   background: #111;
