@@ -3,83 +3,182 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Oliver Tattoo | Alvorada-RS</title>
-<meta name="description" content="Oliver Tattoo — tatuagem personalizada em Alvorada-RS. Agende seu horário pelo WhatsApp.">
+<title>Oliver Tattoo | Alvorada - RS</title>
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:#080706;color:#f4efe6;font-family:Arial,Helvetica,sans-serif}
-a{text-decoration:none;color:inherit}.wrap{max-width:1100px;margin:auto;padding:0 22px}
-header{position:sticky;top:0;z-index:10;background:rgba(8,7,6,.92);backdrop-filter:blur(10px);border-bottom:1px solid #2d2418}
-nav{height:70px;display:flex;align-items:center;justify-content:space-between}
-.brand{font-weight:900;letter-spacing:4px}.brand span{color:#c9a45b}
-.links{display:flex;gap:25px;font-size:14px}.links a:hover{color:#c9a45b}
-.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:70px 0;background:radial-gradient(circle at center,#2b2114 0,#080706 55%)}
-.logo{width:min(380px,78vw);border-radius:50%;box-shadow:0 0 50px rgba(201,164,91,.16)}
-h1{font-size:clamp(38px,7vw,76px);margin:25px 0 8px;letter-spacing:5px}
-.gold{color:#c9a45b}.tag{color:#cfc7ba;max-width:600px;margin:auto;line-height:1.7}
-.btn{display:inline-block;margin-top:28px;padding:15px 25px;border:1px solid #c9a45b;color:#0a0806;background:#c9a45b;font-weight:800;border-radius:4px}
-.btn.alt{background:transparent;color:#f4efe6;margin-left:10px}
-section{padding:85px 0;border-bottom:1px solid #201a13}
-.title{text-align:center;text-transform:uppercase;letter-spacing:4px;font-size:30px;margin:0 0 45px}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
-.about img{width:100%;border-radius:8px;display:block;box-shadow:0 20px 60px #000}
-.about p{color:#cfc7ba;line-height:1.8;font-size:17px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{border:1px solid #2d2418;padding:28px;background:#0d0b09;border-radius:8px}
-.card h3{margin-top:0;color:#c9a45b;letter-spacing:2px}
-.card p{color:#bdb4a8;line-height:1.6}
-.contact{text-align:center;background:linear-gradient(#0b0907,#141006)}
-footer{text-align:center;padding:30px;color:#81786c;font-size:13px}
-@media(max-width:700px){.links{display:none}.about,.cards{grid-template-columns:1fr}.hero{min-height:70vh}.btn.alt{margin-left:0}.about img{max-width:500px;margin:auto}}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #080808;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  background:
+    linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.95)),
+    url("IMG_0940.jpeg") center/cover;
+}
+.hero-content {
+  max-width: 700px;
+}
+.logo {
+  max-width: 180px;
+  width: 60%;
+  margin-bottom: 25px;
+}
+h1 {
+  font-size: clamp(42px, 10vw, 75px);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.hero p {
+  color: #ccc;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.local {
+  margin-top: 8px;
+  color: #aaa;
+}
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.botao {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .3s;
+}
+.whatsapp {
+  background: #fff;
+  color: #000;
+}
+.instagram {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.botao:hover {
+  transform: scale(1.05);
+}
+section {
+  padding: 70px 18px;
+  max-width: 1100px;
+  margin: auto;
+}
+.titulo {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.subtitulo {
+  text-align: center;
+  color: #999;
+  margin-bottom: 40px;
+}
+.sobre {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+  color: #ccc;
+}
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.galeria img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: .3s;
+}
+.galeria img:hover {
+  transform: scale(1.02);
+}
+.cta {
+  text-align: center;
+  background: #111;
+  max-width: none;
+}
+.cta p {
+  color: #aaa;
+  margin: 15px 0 25px;
+}
+footer {
+  text-align: center;
+  padding: 35px 20px;
+  color: #666;
+  font-size: 14px;
+}
+@media (min-width: 700px) {
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .galeria img {
+    height: 300px;
+  }
+}
 </style>
 </head>
 <body>
-<header><div class="wrap"><nav>
-<div class="brand">OLIVER <span>TATTOO</span></div>
-<div class="links"><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#contato">Agendar</a></div>
-</nav></div></header>
-
-<main>
-<section class="hero">
-<div class="wrap">
-<img class="logo" src="logo.jpeg" alt="Logo Oliver Tattoo">
-<h1>OLIVER <span class="gold">TATTOO</span></h1>
-<p class="tag">Arte na pele, identidade e personalidade. Tatuagens personalizadas em Alvorada-RS.</p>
-<a class="btn" href="https://wa.me/5551998211635?text=Ol%C3%A1%20Oliver!%20Quero%20fazer%20um%20or%C3%A7amento%20de%20tatuagem." target="_blank">AGENDAR PELO WHATSAPP</a>
-<a class="btn alt" href="https://instagram.com/olivertattoo051" target="_blank">INSTAGRAM</a>
+<!-- CAPA PRINCIPAL -->
+<header class="hero">
+  <div class="hero-content">
+<h1>Oliver Tattoo</h1>
+<p>Tatuagem de qualidade, feita para marcar sua história.</p>
+<p class="local">📍 Alvorada - RS</p>
+<div class="botoes">
+  <a class="botao whatsapp"
+  href="https://wa.me/5551998211635"
+  target="_blank">
+  AGENDAR PELO WHATSAPP
+  </a>
+  <a class="botao instagram"
+  href="https://instagram.com/olivertattoo051"
+  target="_blank">
+  INSTAGRAM
+  </a>
 </div>
+  </div>
+</header>
+<!-- SOBRE -->
+<section>
+  <h2 class="titulo">Oliver Tattoo</h2>
+  <p class="subtitulo">
+    Arte na pele. Identidade em cada detalhe.
+  </p>
+  <p class="sobre">
+    Trabalho com tatuagens personalizadas, buscando transformar
+    cada ideia em uma arte única. Meu objetivo é entregar um
+    trabalho de qualidade e uma experiência diferenciada para
+    cada cliente.
+  </p>
 </section>
-
-<section id="sobre"><div class="wrap">
-<h2 class="title">Sobre o artista</h2>
-<div class="about">
-<img src="artist.jpeg" alt="Oliver Tattoo">
-<div>
-<h2>Seu projeto. Minha arte.</h2>
-<p>Transformo ideias em tatuagens pensadas para cada pessoa, buscando um resultado marcante, bem executado e com personalidade.</p>
-<p>Atendimento em <strong>Alvorada-RS</strong>. Para solicitar um orçamento, envie sua ideia, o tamanho aproximado e o local do corpo.</p>
-</div>
-</div>
-</div></section>
-
-<section id="servicos"><div class="wrap">
-<h2 class="title">Serviços</h2>
-<div class="cards">
-<div class="card"><h3>BLACK & GREY</h3><p>Trabalhos em preto e cinza, com contraste, sombras e acabamento detalhado.</p></div>
-<div class="card"><h3>REALISMO</h3><p>Projetos personalizados com foco em detalhes, profundidade e composição.</p></div>
-<div class="card"><h3>COVER-UP</h3><p>Estudos de composição para transformar ou cobrir tatuagens antigas.</p></div>
-</div>
-</div></section>
-
-<section id="contato" class="contact"><div class="wrap">
-<h2 class="title">Vamos criar sua tattoo?</h2>
-<p class="tag">Mande sua ideia, tamanho aproximado e local do corpo para receber seu orçamento.</p>
-<a class="btn" href="https://wa.me/5551998211635?text=Ol%C3%A1%20Oliver!%20Quero%20fazer%20um%20or%C3%A7amento%20de%20tatuagem." target="_blank">FALAR NO WHATSAPP</a>
-</div></section>
-</main>
-<footer>© 2026 Oliver Tattoo · Alvorada-RS · Instagram @olivertattoo051</footer>
-</body>
-</html>
+<!-- GALERIA -->
+<section>
+  <h2 class="titulo">Meus trabalhos</h2>
+  <p class="subtitulo">
+    Confira alguns dos meus trabalhos.
+  </p>
+  <div class="galeria">
 <img src="IMG_0940.jpeg" alt="Tatuagem Oliver Tattoo">
 <img src="IMG_0942.jpeg" alt="Tatuagem Oliver Tattoo">
 <img src="IMG_0943.jpeg" alt="Tatuagem Oliver Tattoo">
@@ -91,3 +190,20 @@ footer{text-align:center;padding:30px;color:#81786c;font-size:13px}
 <img src="IMG_0949.jpeg" alt="Tatuagem Oliver Tattoo">
 <img src="IMG_0950.jpeg" alt="Tatuagem Oliver Tattoo">
 <img src="IMG_0951.jpeg" alt="Tatuagem Oliver Tattoo">
+  </div>
+</section>
+<!-- CHAMADA -->
+<section class="cta">
+  <h2 class="titulo">Vamos criar sua próxima tattoo?</h2>
+  <p>
+    Envie sua ideia, tamanho e local do corpo para fazer seu orçamento.
+  </p>
+
+FALAR NO WHATSAPP
+</section>
+<footer>
+  <p>Instagram: @olivertattoo051</p>
+  <p>Oliver Tattoo © 2026</p>
+</footer>
+</body>
+</html>
